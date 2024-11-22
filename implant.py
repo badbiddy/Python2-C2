@@ -10,7 +10,7 @@ import time
 
 # C2 server and proxy details
 C2_HOST = '<C2_SERVER_IP>'  # Replace with your C2 server's IP
-C2_PORT = '<C2_SERVER_PORT>'
+C2_PORT = 80
 PROXY_HOST = '<C2_INTERNAL_PROXY_IP>'
 PROXY_PORT = '<C2_INTERNAL_PROXY_PORT>'
 

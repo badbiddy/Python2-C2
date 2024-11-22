@@ -23,6 +23,7 @@ A lightweight command-and-control (C2) server and implant system designed for se
 - Ensure tasks.txt is formatted as one task per line in JSON format:
 
 `{"task_id": "001", "command": "id"}`
+
 `{"task_id": "002", "command": "ifconfig"}`
 
 - Start the server:
@@ -31,9 +32,13 @@ A lightweight command-and-control (C2) server and implant system designed for se
 
 ## Implant Setup
 - Place implant.py on the client machine.
-- Edit the file to set the C2_HOST variable to the IP address of your server:
+- Edit the file to set the C2_HOST & C2_PROXY variables to the IP address of your C2 server and internal proxy:
 
 `C2_HOST = '<C2_SERVER_IP>'`
+
+`PROXY_HOST = '<C2_INTERNAL_PROXY_IP>'`
+
+`PROXY_PORT = '<C2_INTERNAL_PROXY_PORT>'`
 
 - Run the implant:
 
